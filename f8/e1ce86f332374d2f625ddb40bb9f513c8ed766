@@ -1,0 +1,21 @@
+.gitignore
+  s_71e85e276f5e96::t_f7fb55aa291429 1-23
+README.md
+  s_71e85e276f5e96::t_4c8a3eac381cb2 1-27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "f8e1ce86f332374d2f625ddb40bb9f513c8ed766",
+  "prompts": {},
+  "sessions": {
+    "s_71e85e276f5e96": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0a769-9297-7e40-8b53-4ed16aed8151",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "twilwa <spywarezzz@proton.me>"
+    }
+  }
+}
