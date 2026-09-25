@@ -1,0 +1,23 @@
+# Local vendor checkouts and research source mirrors
+/openclaw/
+/milaidy/
+/lightshell/
+/agentic_coding_flywheel_setup/
+/KAN-directory/
+/shards/
+/architecture/repos/
+# Personal conversation exports and local tooling
+/agent-context/
+/full-claude-convo.md
+/.commandcode/
+.DS_Store
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+# Original recordings stay on the laptop
+*.wav
+*.m4a
+*.webm
+*.mp4

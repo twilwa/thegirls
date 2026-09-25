@@ -1,0 +1,1 @@
+i do need like a quick-focus mode, as well as a no-comms work-mode config to go into. my problem is that i keep getting distracted by wanting to know and connect with people and what they're doing, instead of doing anything myself.
