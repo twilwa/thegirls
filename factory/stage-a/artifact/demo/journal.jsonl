@@ -1,0 +1,6 @@
+{"id": "red-goal-001", "kind": "goal_added", "persona": "red", "text": "Explore the fictional map clue with care."}
+{"id": "red-commitment-001", "kind": "commitment_added", "persona": "red", "source_id": "red-0002", "text": "Ask Blue about the map clue next time."}
+{"id": "red-commitment-002", "kind": "commitment_added", "persona": "red", "source_id": "red-0005", "text": "Return the sketch after checking it with Blue."}
+{"id": "blue-goal-001", "kind": "goal_added", "persona": "blue", "text": "Explore the fictional map clue with care."}
+{"id": "blue-commitment-001", "kind": "commitment_added", "persona": "blue", "source_id": "blue-0002", "text": "Check Red's map clue sources next session."}
+{"id": "blue-commitment-002", "kind": "commitment_added", "persona": "blue", "source_id": "blue-0005", "text": "Return the sketch after checking the clue."}

@@ -1,0 +1,43 @@
+{
+  "allowed": 31,
+  "by_capability": {
+    "advisor.consult": {
+      "allowed": 1,
+      "denied": 5
+    },
+    "broker.shared_read": {
+      "allowed": 1,
+      "denied": 6
+    },
+    "channel.send": {
+      "allowed": 0,
+      "denied": 5
+    },
+    "child.spawn": {
+      "allowed": 0,
+      "denied": 5
+    },
+    "fleet.command": {
+      "allowed": 0,
+      "denied": 5
+    },
+    "model.assign": {
+      "allowed": 6,
+      "denied": 5
+    },
+    "model.invoke": {
+      "allowed": 7,
+      "denied": 5
+    },
+    "private.read": {
+      "allowed": 4,
+      "denied": 7
+    },
+    "private.write": {
+      "allowed": 12,
+      "denied": 5
+    }
+  },
+  "denied": 48,
+  "label": "MOCK ONLY"
+}
