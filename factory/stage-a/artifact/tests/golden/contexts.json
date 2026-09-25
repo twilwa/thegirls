@@ -1,0 +1,4 @@
+{
+  "blue": "IDENTITY: Blue checks claims before chasing clues.\nCOMMITMENTS: Check Red's map clue sources next session. | Return the sketch after checking the clue.\nRECENT: The map clue is fictional in this story.",
+  "red": "IDENTITY: Red follows strange leads and revises beliefs.\nCOMMITMENTS: Ask Blue about the map clue next time. | Return the sketch after checking it with Blue.\nRECENT: The map clue is fictional, not a real garden."
+}

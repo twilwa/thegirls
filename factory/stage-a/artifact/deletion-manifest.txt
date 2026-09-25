@@ -1,0 +1,138 @@
+Stage A deletion manifest
+=========================
+Exact disposable root: /tmp/sr-persona-stage-a.maCJNU
+Only deletion target: the exact root above, and nothing else.
+The report and artifact copy are outside this root and are retained.
+Guarded cleanup call (run after retaining artifacts):
+  PYTHONPATH='/tmp/sr-persona-stage-a.maCJNU/project/src' STAGE_A_ROOT='/tmp/sr-persona-stage-a.maCJNU' python3 -c 'import os; from pathlib import Path; from persona_stage_a import teardown_disposable_tree; p=Path(os.environ["STAGE_A_ROOT"]); teardown_disposable_tree(p,p)'
+The helper resolves both arguments, requires equality and the sr-persona-stage-a. prefix, then removes that exact tree.
+
+Inventory before cleanup: 40 directories and 86 files, including this manifest.
+Directories:
+  home/
+  project/
+  project/demo-data/
+  project/demo-data/private/
+  project/demo-data/private/blue/
+  project/demo-data/private/red/
+  project/demo-final-2/
+  project/demo-final-2/private/
+  project/demo-final-2/private/blue/
+  project/demo-final-2/private/red/
+  project/demo-final-3/
+  project/demo-final-3/private/
+  project/demo-final-3/private/blue/
+  project/demo-final-3/private/red/
+  project/demo-final/
+  project/demo-final/private/
+  project/demo-final/private/blue/
+  project/demo-final/private/red/
+  project/demo-owner-1/
+  project/demo-owner-1/private/
+  project/demo-owner-1/private/blue/
+  project/demo-owner-1/private/red/
+  project/demo-owner-final/
+  project/demo-owner-final/private/
+  project/demo-owner-final/private/blue/
+  project/demo-owner-final/private/red/
+  project/final-demo-data/
+  project/final-demo-data/private/
+  project/final-demo-data/private/blue/
+  project/final-demo-data/private/red/
+  project/src/
+  project/src/__pycache__/
+  project/test-data/
+  project/tests/
+  project/tests/__pycache__/
+  project/tests/golden/
+  xdg-cache/
+  xdg-config/
+  xdg-data/
+  xdg-state/
+Files:
+  project/demo-data/capability-matrix.json
+  project/demo-data/contexts.json
+  project/demo-data/demo-result.json
+  project/demo-data/demo-transcript.txt
+  project/demo-data/journal.jsonl
+  project/demo-data/operation-counts.json
+  project/demo-data/private/blue/episodes.jsonl
+  project/demo-data/private/red/episodes.jsonl
+  project/demo-data/route-ledger.json
+  project/demo-data/route-ledger.jsonl
+  project/demo-final-2/capability-matrix.json
+  project/demo-final-2/contexts.json
+  project/demo-final-2/demo-result.json
+  project/demo-final-2/demo-transcript.txt
+  project/demo-final-2/journal.jsonl
+  project/demo-final-2/operation-counts.json
+  project/demo-final-2/private/blue/episodes.jsonl
+  project/demo-final-2/private/red/episodes.jsonl
+  project/demo-final-2/route-ledger.json
+  project/demo-final-2/route-ledger.jsonl
+  project/demo-final-3/capability-matrix.json
+  project/demo-final-3/contexts.json
+  project/demo-final-3/demo-result.json
+  project/demo-final-3/demo-transcript.txt
+  project/demo-final-3/journal.jsonl
+  project/demo-final-3/operation-counts.json
+  project/demo-final-3/private/blue/episodes.jsonl
+  project/demo-final-3/private/red/episodes.jsonl
+  project/demo-final-3/route-ledger.json
+  project/demo-final-3/route-ledger.jsonl
+  project/demo-final-prejev.txt
+  project/demo-final/capability-matrix.json
+  project/demo-final/contexts.json
+  project/demo-final/demo-result.json
+  project/demo-final/demo-transcript.txt
+  project/demo-final/journal.jsonl
+  project/demo-final/operation-counts.json
+  project/demo-final/private/blue/episodes.jsonl
+  project/demo-final/private/red/episodes.jsonl
+  project/demo-final/route-ledger.json
+  project/demo-final/route-ledger.jsonl
+  project/demo-first-run.txt
+  project/demo-owner-1.txt
+  project/demo-owner-1/capability-matrix.json
+  project/demo-owner-1/contexts.json
+  project/demo-owner-1/demo-result.json
+  project/demo-owner-1/demo-transcript.txt
+  project/demo-owner-1/journal.jsonl
+  project/demo-owner-1/operation-counts.json
+  project/demo-owner-1/private/blue/episodes.jsonl
+  project/demo-owner-1/private/red/episodes.jsonl
+  project/demo-owner-1/route-ledger.json
+  project/demo-owner-1/route-ledger.jsonl
+  project/demo-owner-final/capability-matrix.json
+  project/demo-owner-final/contexts.json
+  project/demo-owner-final/demo-result.json
+  project/demo-owner-final/demo-transcript.txt
+  project/demo-owner-final/journal.jsonl
+  project/demo-owner-final/operation-counts.json
+  project/demo-owner-final/private/blue/episodes.jsonl
+  project/demo-owner-final/private/red/episodes.jsonl
+  project/demo-owner-final/route-ledger.json
+  project/demo-owner-final/route-ledger.jsonl
+  project/final-demo-data/capability-matrix.json
+  project/final-demo-data/contexts.json
+  project/final-demo-data/demo-result.json
+  project/final-demo-data/demo-transcript.txt
+  project/final-demo-data/journal.jsonl
+  project/final-demo-data/operation-counts.json
+  project/final-demo-data/private/blue/episodes.jsonl
+  project/final-demo-data/private/red/episodes.jsonl
+  project/final-demo-data/route-ledger.json
+  project/final-demo-data/route-ledger.jsonl
+  project/final-verification-owner.txt
+  project/final-verification.txt
+  project/src/__pycache__/persona_stage_a.cpython-312.pyc
+  project/src/persona_stage_a.py
+  project/test-final-prejev.txt
+  project/test-owner-pass1.txt
+  project/test-run1.txt
+  project/test-run2.txt
+  project/test-transcript.txt
+  project/tests/__pycache__/test_stage_a.cpython-312.pyc
+  project/tests/golden/contexts.json
+  project/tests/test_stage_a.py
+  project/deletion-manifest.txt (this manifest)

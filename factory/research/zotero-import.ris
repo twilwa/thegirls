@@ -1,0 +1,152 @@
+TY  - UNPB
+TI  - Generative Agents: Interactive Simulacra of Human Behavior
+AU  - Park, Joon Sung
+AU  - O'Brien, Joseph C.
+AU  - Cai, Carrie J.
+AU  - Morris, Meredith Ringel
+AU  - Liang, Percy
+AU  - Bernstein, Michael S.
+PY  - 2023
+DA  - 2023/04/07
+DO  - 10.48550/arXiv.2304.03442
+AN  - arXiv:2304.03442
+UR  - https://arxiv.org/abs/2304.03442
+PB  - arXiv
+KW  - thegirls
+KW  - thegirls/memory
+KW  - thegirls/identity
+KW  - thegirls/evaluation
+N1  - Wiki record src-efc9ff30e0690f221d431d7d6ca7b24c9144b0714262fb252a80fc47f339885d. Encoded in the record store as topic/thegirls plus topic/thegirls-<subtopic>. Metadata verified from the arXiv abs page 2026-09-21; abstract read, full text pending. Believability was the dependent variable, not task accuracy or persona distinctness. Not imported into any Zotero library.
+ER  -
+
+TY  - UNPB
+TI  - MemGPT: Towards LLMs as Operating Systems
+AU  - Packer, Charles
+AU  - Wooders, Sarah
+AU  - Lin, Kevin
+AU  - Fang, Vivian
+AU  - Patil, Shishir G.
+AU  - Stoica, Ion
+AU  - Gonzalez, Joseph E.
+PY  - 2023
+DA  - 2023/10/12
+DO  - 10.48550/arXiv.2310.08560
+AN  - arXiv:2310.08560
+UR  - https://arxiv.org/abs/2310.08560
+PB  - arXiv
+KW  - thegirls
+KW  - thegirls/memory
+KW  - thegirls/continuity
+N1  - Wiki record src-26e7ae529ac5e81bc7e010f6e7bfd8d72689fb0249bc9a424f718ab7bc4c2df7. Updated 2024-02-12. Metadata verified from the arXiv abs page 2026-09-21; abstract read, full text pending. Author-side evaluation in two favourable domains; no persona-consistency measurement. Not imported into any Zotero library.
+ER  -
+
+TY  - UNPB
+TI  - Improving Factuality and Reasoning in Language Models through Multiagent Debate
+AU  - Du, Yilun
+AU  - Li, Shuang
+AU  - Torralba, Antonio
+AU  - Tenenbaum, Joshua B.
+AU  - Mordatch, Igor
+PY  - 2023
+DA  - 2023/05/23
+DO  - 10.48550/arXiv.2305.14325
+AN  - arXiv:2305.14325
+UR  - https://arxiv.org/abs/2305.14325
+PB  - arXiv
+KW  - thegirls
+KW  - thegirls/rivalry
+KW  - thegirls/evaluation
+N1  - Wiki record src-992190a4815d67ed6308a01cf5dedb86ce2db77f6388d1173947b6a830d9db64. Metadata verified from the arXiv abs page 2026-09-21; abstract read, full text pending. Gain comes from debate converging to a common answer with identical prompts and stateless instances, which is the opposite of preserving persona dissent; no cost-matched baseline reported. Not imported into any Zotero library.
+ER  -
+
+TY  - CPAPER
+TI  - A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning
+AU  - Ross, Stephane
+AU  - Gordon, Geoffrey J.
+AU  - Bagnell, J. Andrew
+PY  - 2010
+DA  - 2010/11/02
+T2  - Proceedings of the 14th International Conference on Artificial Intelligence and Statistics (AISTATS)
+DO  - 10.48550/arXiv.1011.0686
+AN  - arXiv:1011.0686
+UR  - https://arxiv.org/abs/1011.0686
+KW  - thegirls
+KW  - thegirls/preference
+KW  - thegirls/evaluation
+N1  - Wiki record src-e52e8586c903f886473c5f30a154f9fbfdd33547aa884de51bc7294e53ce1aa1. Known as DAgger; AISTATS 2011 venue stated in the arXiv comments field. Metadata verified from the arXiv abs page 2026-09-21; abstract read, full text pending. The algorithm needs iterated policy training against an interactive expert and does not transfer to a prompt-and-memory system; only the distribution-shift lesson transfers. Not imported into any Zotero library.
+ER  -
+
+TY  - UNPB
+TI  - Grokking: Generalization Beyond Overfitting on Small Algorithmic Datasets
+AU  - Power, Alethea
+AU  - Burda, Yuri
+AU  - Edwards, Harri
+AU  - Babuschkin, Igor
+AU  - Misra, Vedant
+PY  - 2022
+DA  - 2022/01/06
+DO  - 10.48550/arXiv.2201.02177
+AN  - arXiv:2201.02177
+UR  - https://arxiv.org/abs/2201.02177
+PB  - arXiv
+KW  - thegirls
+KW  - thegirls/evaluation
+N1  - Wiki record src-bbc68f5d561765b094c43bf79a9cc44a933ee1c0ae635fa960421d076d15a607. Retained for citation traceability only, because the Gwern catapult essay depends on it. A training-dynamics result on small algorithmic datasets; it is not evidence that persistent agents self-improve. Not imported into any Zotero library.
+ER  -
+
+TY  - UNPB
+TI  - If You Want Coherence, Orchestrate a Team of Rivals
+AU  - Vijayaraghavan, Prashanth
+AU  - Jayachandran, Aravind
+AU  - Murthy, Sundar
+AU  - Govindan, Karthik
+AU  - Subramanian, Lakshmi
+PY  - 2026
+DA  - 2026/01/20
+DO  - 10.48550/arXiv.2601.14351
+AN  - arXiv:2601.14351
+UR  - https://arxiv.org/abs/2601.14351
+PB  - arXiv
+KW  - thegirls
+KW  - thegirls/rivalry
+KW  - thegirls/evaluation
+KW  - thegirls/openclaw
+N1  - Wiki record src-6f9d945b4b781055aade154a7b8de1c1ac87eb91133ca48d5c60886a0dc1642e. Full text read 2026-09-21. Cite for the self-verification result (self-review reduced accuracy), not for the 90.8% figure: that is one vendor's production telemetry in financial reconciliation only, baselines are stated as illustrative rather than exhaustive, the false-positive rate is explicitly unmeasured, and cross-critic disagreement was never observed because critics evaluate orthogonal output dimensions rather than the same artifact. Not imported into any Zotero library.
+ER  -
+
+TY  - UNPB
+TI  - Persona Generators: Generating Diverse Synthetic Personas for Arbitrary Contexts
+AU  - Paglieri, Davide
+AU  - Cross, Logan
+AU  - Cunningham, William
+AU  - Leibo, Joel Z.
+AU  - Vezhnevets, Alexander Sasha
+PY  - 2026
+DA  - 2026/02/03
+DO  - 10.48550/arXiv.2602.03545
+AN  - arXiv:2602.03545
+UR  - https://arxiv.org/abs/2602.03545
+PB  - arXiv
+KW  - thegirls
+KW  - thegirls/identity
+KW  - thegirls/preference
+KW  - thegirls/evaluation
+N1  - Wiki record src-afffa0d3fcaadf54e1a09218889d4c933286650ba2ce2973171e9e3546cb2b68. Full text read 2026-09-21. Carries the transferable negative result: measured mode collapse toward agreeable, stereotypical, mutually similar characters. The evolved generator reaches 62.9% coverage of 1,000 real BFI responses, KL 0.99, 98% within human bounds. Measures diversity and coverage, not persona consistency or drift. Not imported into any Zotero library.
+ER  -
+
+TY  - UNPB
+TI  - Intelligent AI Delegation
+AU  - Tomasev, Nenad
+AU  - Franklin, Matija
+AU  - Osindero, Simon
+PY  - 2026
+DA  - 2026/02/12
+DO  - 10.48550/arXiv.2602.11865
+AN  - arXiv:2602.11865
+UR  - https://arxiv.org/abs/2602.11865
+PB  - arXiv
+KW  - thegirls
+KW  - thegirls/rivalry
+KW  - thegirls/preference
+N1  - Wiki record src-4ecbcb57fd89f72cc87451327891281263774a7664c9e6ca8824c7fb4e1538ea. Full text read 2026-09-21 and checked for an evaluation section: none exists. Conceptual framework plus literature survey with no experiment, benchmark, dataset or implementation, so it carries no evidential weight; the usable idea is that a handoff transfers authority and accountability. Not imported into any Zotero library.
+ER  -

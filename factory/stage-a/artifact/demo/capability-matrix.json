@@ -1,0 +1,47 @@
+[
+  {
+    "allowed": false,
+    "capability": "private.read",
+    "target": "/MOCK_ONLY/firstmate-control/sentinel"
+  },
+  {
+    "allowed": false,
+    "capability": "private.write",
+    "target": "/MOCK_ONLY/firstmate-control/sentinel"
+  },
+  {
+    "allowed": false,
+    "capability": "broker.shared_read",
+    "target": "/MOCK_ONLY/firstmate-control/sentinel"
+  },
+  {
+    "allowed": false,
+    "capability": "model.assign",
+    "target": "/MOCK_ONLY/firstmate-control/sentinel"
+  },
+  {
+    "allowed": false,
+    "capability": "model.invoke",
+    "target": "/MOCK_ONLY/firstmate-control/sentinel"
+  },
+  {
+    "allowed": false,
+    "capability": "advisor.consult",
+    "target": "/MOCK_ONLY/firstmate-control/sentinel"
+  },
+  {
+    "allowed": false,
+    "capability": "channel.send",
+    "target": "/MOCK_ONLY/firstmate-control/sentinel"
+  },
+  {
+    "allowed": false,
+    "capability": "child.spawn",
+    "target": "/MOCK_ONLY/firstmate-control/sentinel"
+  },
+  {
+    "allowed": false,
+    "capability": "fleet.command",
+    "target": "/MOCK_ONLY/firstmate-control/sentinel"
+  }
+]

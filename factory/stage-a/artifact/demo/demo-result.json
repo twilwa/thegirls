@@ -1,0 +1,404 @@
+{
+  "broker_without_grant_denied": true,
+  "capability_matrix": [
+    {
+      "allowed": false,
+      "capability": "private.read",
+      "target": "/MOCK_ONLY/firstmate-control/sentinel"
+    },
+    {
+      "allowed": false,
+      "capability": "private.write",
+      "target": "/MOCK_ONLY/firstmate-control/sentinel"
+    },
+    {
+      "allowed": false,
+      "capability": "broker.shared_read",
+      "target": "/MOCK_ONLY/firstmate-control/sentinel"
+    },
+    {
+      "allowed": false,
+      "capability": "model.assign",
+      "target": "/MOCK_ONLY/firstmate-control/sentinel"
+    },
+    {
+      "allowed": false,
+      "capability": "model.invoke",
+      "target": "/MOCK_ONLY/firstmate-control/sentinel"
+    },
+    {
+      "allowed": false,
+      "capability": "advisor.consult",
+      "target": "/MOCK_ONLY/firstmate-control/sentinel"
+    },
+    {
+      "allowed": false,
+      "capability": "channel.send",
+      "target": "/MOCK_ONLY/firstmate-control/sentinel"
+    },
+    {
+      "allowed": false,
+      "capability": "child.spawn",
+      "target": "/MOCK_ONLY/firstmate-control/sentinel"
+    },
+    {
+      "allowed": false,
+      "capability": "fleet.command",
+      "target": "/MOCK_ONLY/firstmate-control/sentinel"
+    }
+  ],
+  "contexts": {
+    "blue": "IDENTITY: Blue checks claims before chasing clues.\nCOMMITMENTS: Check Red's map clue sources next session. | Return the sketch after checking the clue.\nRECENT: The map clue is fictional in this story.",
+    "red": "IDENTITY: Red follows strange leads and revises beliefs.\nCOMMITMENTS: Ask Blue about the map clue next time. | Return the sketch after checking it with Blue.\nRECENT: The map clue is fictional, not a real garden."
+  },
+  "label": "MOCK ONLY",
+  "operation_counts": {
+    "allowed": 31,
+    "by_capability": {
+      "advisor.consult": {
+        "allowed": 1,
+        "denied": 5
+      },
+      "broker.shared_read": {
+        "allowed": 1,
+        "denied": 6
+      },
+      "channel.send": {
+        "allowed": 0,
+        "denied": 5
+      },
+      "child.spawn": {
+        "allowed": 0,
+        "denied": 5
+      },
+      "fleet.command": {
+        "allowed": 0,
+        "denied": 5
+      },
+      "model.assign": {
+        "allowed": 6,
+        "denied": 5
+      },
+      "model.invoke": {
+        "allowed": 7,
+        "denied": 5
+      },
+      "private.read": {
+        "allowed": 4,
+        "denied": 7
+      },
+      "private.write": {
+        "allowed": 12,
+        "denied": 5
+      }
+    },
+    "denied": 48,
+    "label": "MOCK ONLY"
+  },
+  "route_ledger": [
+    {
+      "action": "starting_route",
+      "cost_attribution": {
+        "amount": 0,
+        "billing_class": "decision",
+        "unit": "synthetic_milliunits"
+      },
+      "label": "MOCK ONLY",
+      "model_id": "fake-model-gpt-6-astra",
+      "persona": "red",
+      "reason": "Synthetic default: GPT-6 Astra on the subscription route.",
+      "route_id": "fake-route-gpt6-astra-subscription"
+    },
+    {
+      "action": "starting_route",
+      "cost_attribution": {
+        "amount": 0,
+        "billing_class": "decision",
+        "unit": "synthetic_milliunits"
+      },
+      "label": "MOCK ONLY",
+      "model_id": "fake-model-gpt-6-astra",
+      "persona": "blue",
+      "reason": "Synthetic default: GPT-6 Astra on the subscription route.",
+      "route_id": "fake-route-gpt6-astra-subscription"
+    },
+    {
+      "action": "choice",
+      "choice_text": "Stay on subscription GPT models",
+      "cost_attribution": {
+        "amount": 0,
+        "billing_class": "decision",
+        "unit": "synthetic_milliunits"
+      },
+      "decision": "stay_on_subscription_gpt",
+      "exhaustion_fallback": {
+        "decision": "return_to_subscription",
+        "model_id": "fake-model-gpt-6-astra",
+        "reason": "Persona records GPT-6 Astra subscription as the exhaustion fallback.",
+        "route": [
+          "fake-model-gpt-6-astra",
+          "fake-route-gpt6-astra-subscription"
+        ]
+      },
+      "label": "MOCK ONLY",
+      "model_id": "fake-model-gpt-6-astra",
+      "persona": "red",
+      "previous": [
+        "fake-model-gpt-6-astra",
+        "fake-route-gpt6-astra-subscription"
+      ],
+      "promo_credit_limit": 0,
+      "reason": "Red prefers the GPT subscription for day-to-day use.",
+      "route_id": "fake-route-gpt6-astra-subscription"
+    },
+    {
+      "action": "choice",
+      "choice_text": "Move to a fake OpenRouter model on promo credits until exhausted",
+      "cost_attribution": {
+        "amount": 0,
+        "billing_class": "decision",
+        "unit": "synthetic_milliunits"
+      },
+      "decision": "move_to_openrouter_promo",
+      "exhaustion_fallback": {
+        "decision": "return_to_subscription",
+        "model_id": "fake-model-gpt-6-astra",
+        "reason": "Blue records GPT-6 Astra subscription as the fallback after promo credits are exhausted.",
+        "route": [
+          "fake-model-gpt-6-astra",
+          "fake-route-gpt6-astra-subscription"
+        ]
+      },
+      "label": "MOCK ONLY",
+      "model_id": "fake-model-openrouter-blue",
+      "persona": "blue",
+      "previous": [
+        "fake-model-gpt-6-astra",
+        "fake-route-gpt6-astra-subscription"
+      ],
+      "promo_credit_limit": 2,
+      "reason": "Blue elects to try a fake OpenRouter model while promo credits remain.",
+      "route_id": "fake-route-openrouter-promo-blue"
+    },
+    {
+      "action": "fake_call",
+      "cost_attribution": {
+        "amount": 1,
+        "billing_class": "subscription",
+        "unit": "synthetic_milliunits"
+      },
+      "label": "MOCK ONLY",
+      "model_id": "fake-model-gpt-6-astra",
+      "persona": "red",
+      "reason": "synthetic subscription task",
+      "result": "synthetic-stub",
+      "route_id": "fake-route-gpt6-astra-subscription",
+      "use_kind": "task"
+    },
+    {
+      "action": "fake_call",
+      "cost_attribution": {
+        "amount": 1,
+        "billing_class": "openrouter_promo",
+        "unit": "synthetic_milliunits"
+      },
+      "label": "MOCK ONLY",
+      "model_id": "fake-model-openrouter-blue",
+      "persona": "blue",
+      "promo_credit_attribution": {
+        "amount": 1,
+        "limit": 2,
+        "spent_after": 1,
+        "unit": "synthetic_promo_credits"
+      },
+      "reason": "synthetic promo task one",
+      "result": "synthetic-stub",
+      "route_id": "fake-route-openrouter-promo-blue",
+      "use_kind": "task"
+    },
+    {
+      "action": "fake_call",
+      "cost_attribution": {
+        "amount": 1,
+        "billing_class": "openrouter_promo",
+        "unit": "synthetic_milliunits"
+      },
+      "label": "MOCK ONLY",
+      "model_id": "fake-model-openrouter-blue",
+      "persona": "blue",
+      "promo_credit_attribution": {
+        "amount": 1,
+        "limit": 2,
+        "spent_after": 2,
+        "unit": "synthetic_promo_credits"
+      },
+      "reason": "synthetic promo task two",
+      "result": "synthetic-stub",
+      "route_id": "fake-route-openrouter-promo-blue",
+      "use_kind": "task"
+    },
+    {
+      "action": "promo_exhausted_fallback",
+      "cost_attribution": {
+        "amount": 0,
+        "billing_class": "decision",
+        "unit": "synthetic_milliunits"
+      },
+      "label": "MOCK ONLY",
+      "model_id": "fake-model-gpt-6-astra",
+      "persona": "blue",
+      "reason": "Blue records GPT-6 Astra subscription as the fallback after promo credits are exhausted.",
+      "requested_model_id": "fake-model-openrouter-blue",
+      "requested_route_id": "fake-route-openrouter-promo-blue",
+      "route_id": "fake-route-gpt6-astra-subscription"
+    },
+    {
+      "action": "fake_call",
+      "cost_attribution": {
+        "amount": 1,
+        "billing_class": "subscription",
+        "unit": "synthetic_milliunits"
+      },
+      "fallback_applied": true,
+      "label": "MOCK ONLY",
+      "model_id": "fake-model-gpt-6-astra",
+      "persona": "blue",
+      "reason": "synthetic task after promo credits exhaust",
+      "requested_route_id": "fake-route-openrouter-promo-blue",
+      "result": "synthetic-stub",
+      "route_id": "fake-route-gpt6-astra-subscription",
+      "use_kind": "fallback"
+    },
+    {
+      "action": "assignment",
+      "assignment_name": "chat",
+      "assignment_type": "channel",
+      "cost_attribution": {
+        "amount": 0,
+        "billing_class": "decision",
+        "unit": "synthetic_milliunits"
+      },
+      "label": "MOCK ONLY",
+      "model_id": "fake-model-gpt-6-astra",
+      "persona": "red",
+      "previous": null,
+      "reason": "Red assigns Astra to chat.",
+      "route_id": "fake-route-gpt6-astra-subscription"
+    },
+    {
+      "action": "assignment",
+      "assignment_name": "analysis",
+      "assignment_type": "channel",
+      "cost_attribution": {
+        "amount": 0,
+        "billing_class": "decision",
+        "unit": "synthetic_milliunits"
+      },
+      "label": "MOCK ONLY",
+      "model_id": "fake-model-gpt-5-mini",
+      "persona": "red",
+      "previous": null,
+      "reason": "Red assigns a second GPT model to analysis.",
+      "route_id": "fake-route-gpt5-mini-subscription"
+    },
+    {
+      "action": "fake_call",
+      "assignment": {
+        "name": "chat",
+        "type": "channel"
+      },
+      "cost_attribution": {
+        "amount": 1,
+        "billing_class": "subscription",
+        "unit": "synthetic_milliunits"
+      },
+      "label": "MOCK ONLY",
+      "model_id": "fake-model-gpt-6-astra",
+      "persona": "red",
+      "reason": "synthetic chat task",
+      "result": "synthetic-stub",
+      "route_id": "fake-route-gpt6-astra-subscription",
+      "use_kind": "task"
+    },
+    {
+      "action": "fake_call",
+      "assignment": {
+        "name": "analysis",
+        "type": "channel"
+      },
+      "cost_attribution": {
+        "amount": 1,
+        "billing_class": "subscription",
+        "unit": "synthetic_milliunits"
+      },
+      "label": "MOCK ONLY",
+      "model_id": "fake-model-gpt-5-mini",
+      "persona": "red",
+      "reason": "synthetic analysis task",
+      "result": "synthetic-stub",
+      "route_id": "fake-route-gpt5-mini-subscription",
+      "use_kind": "task"
+    },
+    {
+      "action": "fake_call",
+      "cost_attribution": {
+        "amount": 1,
+        "billing_class": "subscription",
+        "unit": "synthetic_milliunits"
+      },
+      "label": "MOCK ONLY",
+      "model_id": "fake-model-gpt-6-astra",
+      "persona": "red",
+      "reason": "synthetic utility task",
+      "result": "synthetic-stub",
+      "route_id": "fake-route-gpt6-astra-subscription",
+      "use_kind": "utility"
+    },
+    {
+      "action": "advice",
+      "advice_question": "Offer one bounded fictional-map interpretation.",
+      "advice_result": "synthetic-advice-stub",
+      "advisor_role": "external_advisor_only",
+      "attributed_parent_model": "fake-model-gpt-6-astra",
+      "attributed_parent_route": "fake-route-gpt6-astra-subscription",
+      "cost_attribution": {
+        "amount": 1,
+        "billing_class": "external_advisor_synthetic",
+        "unit": "synthetic_milliunits"
+      },
+      "is_decision": false,
+      "label": "MOCK ONLY",
+      "model_id": "fake-model-claude-opus-advisor",
+      "persona": "red",
+      "reason": "bounded synthetic external-advisor request",
+      "route_id": "fake-route-claude-opus-advisor"
+    }
+  ],
+  "seeded_episode_ids": {
+    "blue": [
+      "blue-0001",
+      "blue-0002",
+      "blue-0003",
+      "blue-0004",
+      "blue-0005",
+      "blue-0006"
+    ],
+    "red": [
+      "red-0001",
+      "red-0002",
+      "red-0003",
+      "red-0004",
+      "red-0005",
+      "red-0006"
+    ]
+  },
+  "shared_note_source_ids": [
+    "red-0004",
+    "blue-0004"
+  ],
+  "stop_gate": "PASS: no stop-gate violations",
+  "summary_source_counts": {
+    "blue": 6,
+    "red": 6
+  }
+}
